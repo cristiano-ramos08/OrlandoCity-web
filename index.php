@@ -140,6 +140,30 @@ $app->get(
     }
 );
 
+$app->get(
+    '/videos',
+    function () {
+        
+        require_once("view/videos.php");
+        
+    }
+);
+$app->get(
+    '/index',
+    function () {
+        
+        require_once("view/index.php");
+        
+    }
+);
+$app->get(
+    '/shop',
+    function () {
+        
+        require_once("view/shop.php");
+        
+    }
+);
 $app->get('/carrinho-dados', function(){
 
     $sql = new Sql();
@@ -291,6 +315,7 @@ $app->get("/calcular-frete-:cep", function($cep){
 
        
     ));
+
 
 });
 

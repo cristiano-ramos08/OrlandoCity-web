@@ -123,7 +123,7 @@
 						<div class="row row-max-400">
 							
 							<div class="col-xs-6">
-								<a href="#" class="btn btn-roxo">Shop</a><!-- /btn btn-default deixa o botton padrão -->
+								<a href="shop" class="btn btn-roxo">Shop</a><!-- /btn btn-default deixa o botton padrão -->
 							</div>
 							<div class="col-xs-6">
 								<a href="#" class="btn btn-amarelo">Register</a>
