@@ -467,7 +467,7 @@ video {
 	font-size: 30px;
 	position: absolute;
     top: -10px;
-    left: 182px;
+    left: 140px;
 }
 
 #destaque-produtos .col-descricao .btn-comprar {
@@ -692,3 +692,116 @@ video {
 	color: #fff!important;
 	border-radius: 0;
 }
+.header-simple-page {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    clear: both;
+    width: 100%;
+    color: #FFF;
+    border-bottom: 5px solid #948448;
+    position: relative;
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.header-simple-page h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: bold;
+    position: relative;
+    top: 35px;
+}
+
+.result-general {
+margin: 10px 0px 70px;
+    box-shadow: 0px 35px 50px rgb(0 0 0 / 20%);
+
+}
+
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fl-table thead {
+    background-image: linear-gradient(rgba(0,100,55, 0.5), rgba(0,100,55, 0.5),rgba(0,100,55, 0.7)) !important;
+    background: #000;
+    color: #fff;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+}
+.container .h3 {
+    color: #006437;
+}
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 17px;
+    color: #5E2799;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.fl-table thead th {
+    color: #71325b;
+    background-image: linear-gradient(rgba(94, 41, 154, .8), rgba(94, 41, 154, .9),rgba(94, 41, 154, .8)) !important;
+}
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 92%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.fl-table th {
+    height: 35px;
+}
+
+h2 {
+    color: #5E2799;
+}
+.mb-20 {
+    text-align: center;
+    top: 20;
+}
+
+/*Definido cor das linhas pares*/
+.fl-table tr:nth-child(even) {background: #FFF}
+         
+ /*Definindo cor das Linhas impáres*/
+.fl-table tr:nth-child(odd) {background: #EEE} 
+

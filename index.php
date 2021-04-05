@@ -34,6 +34,15 @@ $app->get(
     }
 );
 
+
+$app->get(
+    '/resultado',
+    function () {
+
+        require_once("view/resultado.php");
+    }
+);
+
 $app->get('/produtos', function(){
     
     $sql = new Sql(); 
