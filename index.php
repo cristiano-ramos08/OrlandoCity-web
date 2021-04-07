@@ -18,6 +18,25 @@ $app->get(
         require_once("view/index.php");
     }
 );
+$app->get(
+    '/cart',
+    function () {
+        
+        require_once("view/cart.php");
+        
+    }
+);
+
+
+$app->get(
+    '/index',
+    function () {
+        
+        require_once("view/index.php");
+        
+    }
+);
+
 
 $app->get(
     '/videos',
@@ -26,6 +45,15 @@ $app->get(
         require_once("view/videos.php");
     }
 );
+
+$app->get(
+    '/result',
+    function () {
+
+        require_once("view/result.php");
+    }
+);
+
 $app->get(
     '/shop',
     function () {
@@ -140,39 +168,7 @@ $app->get("/produto-:id_prod", function($id_prod){
 
 });
 
-$app->get(
-    '/cart',
-    function () {
-        
-        require_once("view/cart.php");
-        
-    }
-);
 
-$app->get(
-    '/videos',
-    function () {
-        
-        require_once("view/videos.php");
-        
-    }
-);
-$app->get(
-    '/index',
-    function () {
-        
-        require_once("view/index.php");
-        
-    }
-);
-$app->get(
-    '/shop',
-    function () {
-        
-        require_once("view/shop.php");
-        
-    }
-);
 $app->get('/carrinho-dados', function(){
 
     $sql = new Sql();
