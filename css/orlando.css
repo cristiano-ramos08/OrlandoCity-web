@@ -417,13 +417,21 @@ video {
 }
 #destaque-produtos-container {
 	position: relative;
+	left: 0px;
 
 }
 
 #destaque-produtos {
 	margin: 30px auto;	
 	position: relative;
-	left: 100px;
+	left: 78px;
+
+}
+
+#destaque-jogos {
+	margin: 30px auto;	
+	position: relative;
+	left: 78px;
 
 }
 #destaque-produtos .col-imagem {
@@ -480,7 +488,7 @@ video {
 #destaque-produtos .col-descricao .text-parcelas {
 	margin-top: 20px;
 }
-#btn-destaque-prev {
+#btn-jogos-prev {
 	position: absolute;
 	top: 140px;
 	left: 0;
@@ -490,7 +498,7 @@ video {
 	color: #2A2A2A;
 	
 }
-#btn-destaque-next {
+#btn-jogos-next {
 	position: absolute;
 	top: 140px;
 	right: 0;
@@ -498,6 +506,28 @@ video {
 	border: none;
 	font-size: 64px;
 	color: #2A2A2A;
+	
+
+}
+#btn-destaque-prev {
+	position: absolute;
+	    left: 57px;
+    top: -85px;
+	background: none;
+	border: none;
+	font-size: 64px;
+	color: #2A2A2A;
+	
+}
+#btn-destaque-next {
+	position: absolute;
+	right: -63px;
+    top: -86px;
+	background: none;
+	border: none;
+	font-size: 64px;
+	color: #2A2A2A;
+
 	
 
 }
@@ -565,6 +595,9 @@ video {
   cursor: pointer;
   border-radius: 3px;
   width: 20px;
+  position: relative;
+    left: 66px;
+    top: -79px;
 }
 #destaque-produtos .owl-next {
   margin: 5px;
@@ -574,6 +607,33 @@ video {
   cursor: pointer;
   border-radius: 3px;
   width: 20px;
+   position: relative;
+    right: -71px;
+    top: -79px
+}
+#destaque-jogos .owl-prev {
+  margin: 5px;
+  padding: 4px 7px;
+  background-color: rgba(94,41,154, 0.80);
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 20px;
+  position: relative;
+    left: -455px;
+    top: -79px;
+}
+#destaque-jogos .owl-next {
+  margin: 5px;
+  padding: 4px 7px;
+  background-color: rgba(94,41,154, 0.80);
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 20px;
+   position: relative;
+  right: -421px;
+   top: -86px;
 }
 .box-produto-info h3 {
 	font-size:	12px;
@@ -745,15 +805,16 @@ margin: 10px 0px 70px;
     background-image: linear-gradient(rgba(0,100,55, 0.5), rgba(0,100,55, 0.5),rgba(0,100,55, 0.7)) !important;
     background: #000;
     color: #fff;
+   
+
 }
 
 tr {
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
-}
-
-}
+   
+   }
 .container .h3 {
     color: #006437;
 }
@@ -763,12 +824,18 @@ tr {
     color: #5E2799;
     word-wrap: break-word;
     overflow-wrap: break-word;
-}
+  
 
+
+
+}
+td {
+    width: 634px;
+}
 .fl-table thead th {
     color: #71325b;
     background-image: linear-gradient(rgba(94, 41, 154, .8), rgba(94, 41, 154, .9),rgba(94, 41, 154, .8)) !important;
-}
+ }
 .fl-table td, .fl-table th {
     text-align: center;
     padding: 8px;
@@ -793,7 +860,9 @@ tr {
 
 h2 {
     color: #5E2799;
+   
 }
+
 .mb-20 {
     text-align: center;
     top: 20;
@@ -805,3 +874,87 @@ h2 {
  /*Definindo cor das Linhas impáres*/
 .fl-table tr:nth-child(odd) {background: #EEE} 
 
+/*tela dos próximos jogos
+*/
+
+#destaque-times-containe {
+	position: relative;
+}
+
+#destaque-produtos {
+
+}
+#destaque-jogos .col-time1 {
+	left: -70px;
+
+
+}
+#destaque-jogos .col-time2 {
+right: -312px;
+
+}
+
+#destaque-jogos .time1-img {
+
+    position: relative;
+    left: 280px;
+    padding-top: 10px;
+    max-width: 45px;
+    max-height: 45px;
+    top: 9px;
+}
+#destaque-jogos .time2-img {
+
+    position: relative;
+    left: -294px;
+    padding-top: 10px;
+    max-width: 45px;
+    max-height: 45px;
+    top: 9px;
+
+}
+#destaque-jogos .col-time1 p{
+	position: absolute;
+    left: 380px;
+    padding-top: 26px;
+}
+
+
+#destaque-jogos .col-dados1 h1 {
+   color: #5E2799;
+   font-size: 20px; 
+   position: relative;
+   left: 288px;
+   padding-top: 
+}
+
+#destaque-jogos .col-dados1 h2{
+    color: #5E2799;
+   font-size: 20px; 
+   position: relative;
+   left: 188px;
+   padding-top: 
+}
+#destaque-jogos .col-dados2 h3{
+    color: #5E2799;
+     font-size: 20px;
+     position: relative;
+    right: 166px;
+}
+#destaque-jogos .col-dados2 h4{
+    color: #5E2799;
+     font-size: 20px;
+     position: relative;
+    right: 167px;
+ } 
+
+
+.containers {
+     background-color: #f7f7f7;
+ }
+ 
+ t {
+ 	left: -406px;
+    position: relative;
+
+ }

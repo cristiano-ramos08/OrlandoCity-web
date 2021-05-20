@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="shop">
+<html ng-app="index">
 	<head>
 
 		<meta charset="utf-8">
@@ -89,7 +89,6 @@
 					<nav id="menu" class="pull-right">
 						<ul>
 							<li><a href="index">Home</a></li>
-							
 							<li><a href="https://futnewsaps.herokuapp.com/">News</a></li>
 							<li><a href="videos">Videos</a></li>
 							<li><a href="result">Results & Records</a></li>

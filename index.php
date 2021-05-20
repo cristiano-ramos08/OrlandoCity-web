@@ -26,6 +26,23 @@ $app->get(
         
     }
 );
+$app->get(
+    '/cartResult',
+    function () {
+        
+        require_once("view/cartResult.php");
+        
+    }
+);
+
+$app->get(
+    '/news',
+    function () {
+        
+        window.location.replace("https://futnewsaps.herokuapp.com/");
+        
+    }
+);
 
 
 $app->get(
@@ -62,6 +79,13 @@ $app->get(
     }
 );
 
+$app->get(
+    '/shop2',
+    function () {
+
+        require_once("view/shop2.php");
+    }
+);
 
 $app->get(
     '/resultado',
@@ -82,7 +106,7 @@ $app->get('/produtos', function(){
         $centavos = explode(".", $preco);//o explode procura o ponto e usa como se uma dinamite, distribuindo dentro da memoria array.
         $produto['preco'] = number_format($preco, 0, ",", ".");
         $produto['centavos'] = end($centavos);
-        $produto['parcelas'] = 10;
+        $produto['parcelas'] = 22;
         $produto['parcela'] = number_format($preco/$produto['parcelas'], 2, ",", ".");
         $produto['total'] = number_format($preco, 2, ",", ".");
     }
@@ -91,6 +115,28 @@ $app->get('/produtos', function(){
     echo json_encode($data);
 
 });
+
+
+$app->get('/jogos', function(){
+    
+    $sql = new Sql(); 
+
+    $data = $sql->select("SELECT * FROM tb_jogos inner join tb_campeonato as campeonato on campeonato.id_campeonato = id_tipo_campeonato;");
+
+    echo json_encode($data);
+
+});
+
+$app->get('/resultado', function(){
+    
+    $sql = new Sql(); 
+
+    $data = $sql->select("SELECT * FROM tb_estatistica;");
+
+    echo json_encode($data);
+
+});
+
 
 $app->get('/buscados', function(){
 
